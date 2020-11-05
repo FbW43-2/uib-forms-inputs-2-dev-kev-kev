@@ -1,0 +1,35 @@
+:root {
+  font-size: 120%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(47, 92, 240);
+  margin: 0;
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  background-color: rgb(25, 46, 136);
+  color: lightblue;
+}
+
+form {
+  text-align: center;
+  color: lightblue;
+}
+
+fieldset > div {
+  padding: 20px;
+  text-align: left;
+}
+
+fieldset {
+  display: inline-block;
+}
+
+legend {
+  background-color: lightgreen;
+  color: black;
+}
