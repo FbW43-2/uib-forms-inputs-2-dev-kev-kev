@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input 2</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Form Input 2</h1>
+    </header>
+    
+    <main>
+        <form action="post">
+            <fieldset>
+                <legend>Car Insurance Register</legend>
+
+                <div>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name" required maxlength="30">
+                </div>
+
+                <div>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="last-name" required maxlength="50">
+                </div>
+
+                <div>
+                    <label for="user-picture">Select User Picture:</label>
+                    <input type="file" name="user-picture" id="user-picture" accept="image/*">
+                </div>
+
+                <div>
+                    <label for="insurance-type">Type of Insurance:</label>
+                    <input type="text" name="insurance-type" id="insurance-type" value="Insurance Type 1" readonly>
+                </div>
+
+                <div>
+                    <label for="street-name">Name of Street:</label>
+                    <input type="text" name="street-name" id="street-name" required maxlength="150">
+                </div>
+
+                <div>
+                    <label for="house-number">House-Number:</label>
+                    <input type="number" name="house-number" id="house-number" required minlength="1" maxlength="300">
+                </div>
+
+                <div>
+                    <label for="postal-code">Postal Code:</label>
+                    <input type="number" name="postal-code" id="postal-code" required>
+                </div>
+
+                <div>
+                    <label for="city">City:</label>
+                    <input list="city-suggestions" type="text" name="city" id="city" required>
+
+                    <datalist id="city-suggestions">
+                        <option value="Berlin"></option>
+                        <option value="Hamburg"></option>
+                        <option value="Leipzig"></option>
+                        <option value="Stuttgart"></option>
+                        <option value="Horb am Neckar"></option>
+                        <option value="Cottbus"></option>
+                        <option value="Tübingen"></option>
+                        <option value="Frankfurt am Main"></option>
+                        <option value="Kiel"></option>
+                        <option value="München"></option>
+
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="">Car Brand:</label>
+                    <select name="car-brand" id="car-brand" required>
+                        <datalist id="car-brand">
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Mercedes-Benz">Mercedes-Benz</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Porsche">Porsche</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Opel">Opel</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Volvo">Volvo</option>
+                            <option value="Citroen">Citroen</option>
+                            <option value="Renault">Renault</option>
+                        </datalist>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+                
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+</html>
